@@ -1,4 +1,4 @@
-This is a Marvell Kirkwood machine layer for openembedded-core.
+This is a Marvell Kirkwood machine layer for yocto.
 
 Provides two machine configurations but should be easy to
 extend to other Kirkwood platforms (these are currently
@@ -7,12 +7,7 @@ identical anyway):
  * Netgear Stora (MS2110): Tested inc SATA, USB, RTC.
  * Sheevaplug: Not yet tested.
 
-Linux kernel is currently 2.6.35-rc1 pulled from Marvell
-orion git repository. Patches are applied to add support
-for the Netgear MS2110 (NetStora) machine.
-	
-Netgear Stora patches are from Bryan McGuire's repository:
- http://gitorious.org/openstora/orion-netgear_ms2110.
+Linux kernel switched to use standard yocto kernel 3.10
 
 Angstrom instructions:
 
