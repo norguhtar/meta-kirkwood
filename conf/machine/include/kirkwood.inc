@@ -4,10 +4,12 @@
 TARGET_ARCH = "arm"
 
 PREFERRED_PROVIDER_virtual/bootloader = ""
-PREFERRED_PROVIDER_virtual/kernel = "linux-kirkwood"
 
 IMAGE_FSTYPES += "tar.gz ubi"
 SERIAL_CONSOLE = "115200 ttyS0"
+
+PREFERRED_PROVIDER_virtual/kernel ?= "linux-yocto"
+PREFERRED_VERSION_linux-yocto ?= "3.10%"
 
 # Currently all the orion devices we support use uImage
 KERNEL_IMAGETYPE = "uImage"
